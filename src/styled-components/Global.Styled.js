@@ -13,7 +13,11 @@ export const GlobalStyles = createGlobalStyle`
         background-image: url("./images/bg-intro-mobile.png");
         background-repeat: no-repeat;
         background-color: #FF7979;
-        width: 100vh;
+        width: 100vw;
         height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 24px;
     }
 `
