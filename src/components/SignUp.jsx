@@ -62,6 +62,7 @@ export default function SignUp() {
             {...register("firstName")}
             border={errors.firstName ? "#FF7979" : "#DEDEDE"}
             bg={errors.firstName ? "./images/icon-error.svg" : ""}
+            onFocus={() => setFocus(true)}
           />
           <ErrorTxt>{errors.firstName?.message}</ErrorTxt>
 
