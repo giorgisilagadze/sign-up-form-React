@@ -4,6 +4,9 @@ import {
   SignUpDiv,
   StyledInput,
   StyledSubmit,
+  Terms,
+  TermsSpan,
+  ErrorTxt,
 } from "../styled-components/SignUp.Styled";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -57,35 +60,43 @@ export default function SignUp() {
             placeholder="First Name"
             {...register("firstName")}
             border={errors.firstName ? "#FF7979" : "#DEDEDE"}
+            bg={errors.firstName ? "./images/icon-error.svg" : ""}
           />
-          <p>{errors.firstName?.message}</p>
+          <ErrorTxt>{errors.firstName?.message}</ErrorTxt>
 
           <StyledInput
             type="text"
             placeholder="Last Name"
             {...register("lastName")}
             border={errors.lastName ? "#FF7979" : "#DEDEDE"}
+            bg={errors.lastName ? "./images/icon-error.svg" : ""}
           />
-          <p>{errors.lastName?.message}</p>
+          <ErrorTxt>{errors.lastName?.message}</ErrorTxt>
 
           <StyledInput
             type="email"
             placeholder="Email Address"
             {...register("email")}
             border={errors.email ? "#FF7979" : "#DEDEDE"}
+            bg={errors.email ? "./images/icon-error.svg" : ""}
           />
-          <p>{errors.email?.message}</p>
+          <ErrorTxt>{errors.email?.message}</ErrorTxt>
 
           <StyledInput
             type="password"
             placeholder="Password"
             {...register("password")}
             border={errors.password ? "#FF7979" : "#DEDEDE"}
+            bg={errors.password ? "./images/icon-error.svg" : ""}
           />
-          <p>{errors.password?.message}</p>
+          <ErrorTxt>{errors.password?.message}</ErrorTxt>
 
           <StyledSubmit>CLAIM YOUR FREE TRIAL</StyledSubmit>
         </form>
+        <Terms>
+          By clicking the button, you are agreeing to our{" "}
+          <TermsSpan>Terms and Services</TermsSpan>
+        </Terms>
       </SignUpDiv>
     </div>
   );

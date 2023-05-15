@@ -17,7 +17,5 @@ export const GlobalStyles = createGlobalStyle`
         height: 100%;
         display: flex;
         justify-content: center;
-        /* align-items: center; */
-        padding: 88px 24px;
     }
 `

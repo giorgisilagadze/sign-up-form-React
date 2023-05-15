@@ -2,6 +2,7 @@ import { GlobalStyles } from "./styled-components/Global.Styled";
 import { Helmet } from "react-helmet";
 import Title from "./components/Title";
 import SignUp from "./components/SignUp";
+import { MainDiv } from "./styled-components/Title.Styled";
 
 function App() {
   return (
@@ -13,10 +14,10 @@ function App() {
         />
       </Helmet>
       <GlobalStyles />
-      <div>
+      <MainDiv>
         <Title />
         <SignUp />
-      </div>
+      </MainDiv>
     </>
   );
 }

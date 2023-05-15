@@ -45,6 +45,10 @@ export const StyledInput = styled.input`
     line-height: 26px;
     letter-spacing: 0.25px;
     color: #3D3B48;
+    background-image: url(${({bg}) => bg});
+    background-repeat: no-repeat;
+    background-position: top 16px right 10px;
+
 
     &:focus {
         outline: none;
@@ -63,4 +67,31 @@ export const StyledSubmit  = styled.button`
     letter-spacing: 1px;
     color: white;
     background-color: #38CC8B;
+`
+
+export const Terms = styled.p`
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 21px;
+    color: #BAB7D4;
+    text-align: center;
+    padding: 0px 15px;
+`
+
+export const TermsSpan = styled.span`
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 21px;
+    color: #FF7979;
+`
+
+export const ErrorTxt = styled.p`
+    font-family: 500;
+    font-style: italic;
+    font-size: 11px;
+    line-height: 16.5px;
+    margin-top: 6px;
+    text-align: right;
+    color: #FF7979;
 `

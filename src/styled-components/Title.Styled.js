@@ -19,3 +19,9 @@ export const StyledText = styled.p`
     margin-top: 16px;
 
 `
+
+export const MainDiv = styled.div`
+    width: 375px;
+    padding: 88px 24px;
+
+`
