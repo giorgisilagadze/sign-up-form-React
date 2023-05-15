@@ -8,6 +8,12 @@ export const StyledTitle = styled.h1`
     color: white;
     text-align: center;
 
+    @media(min-width: 1440px) {
+        font-size: 50px;
+        line-height: 55px;
+        letter-spacing: -0.52px; 
+        text-align: start;   
+    }
 `
 
 export const StyledText = styled.p`
@@ -18,10 +24,29 @@ export const StyledText = styled.p`
     text-align: center;
     margin-top: 16px;
 
+    @media(min-width: 1440px) {
+        text-align: start; 
+        margin-top: 25px;  
+    }
+
+`
+
+export const TextContainer = styled.div`
+    @media(min-width: 1440px) {
+        width: 525px;
+    }
 `
 
 export const MainDiv = styled.div`
-    width: 375px;
-    padding: 88px 24px;
+    width: 327px;
+    padding: 88px 0px;
+
+    @media(min-width: 1440px) {
+        width: 1110px;
+        display: flex;
+        align-items: center;
+        gap: 45px;
+        padding: 0px;
+    }
 
 `

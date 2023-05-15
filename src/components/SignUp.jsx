@@ -1,4 +1,5 @@
 import {
+  Container,
   OfferDiv,
   Span,
   SignUpDiv,
@@ -49,7 +50,7 @@ export default function SignUp() {
   const onSubmit = (data) => console.log(data);
 
   return (
-    <div>
+    <Container>
       <OfferDiv>
         <Span>Try it free 7 days</Span> then $20/mo. thereafter
       </OfferDiv>
@@ -74,7 +75,6 @@ export default function SignUp() {
           <ErrorTxt>{errors.lastName?.message}</ErrorTxt>
 
           <StyledInput
-            type="email"
             placeholder="Email Address"
             {...register("email")}
             border={errors.email ? "#FF7979" : "#DEDEDE"}
@@ -98,6 +98,6 @@ export default function SignUp() {
           <TermsSpan>Terms and Services</TermsSpan>
         </Terms>
       </SignUpDiv>
-    </div>
+    </Container>
   );
 }

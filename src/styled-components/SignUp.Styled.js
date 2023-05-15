@@ -1,5 +1,13 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+    width: 327px;
+
+    @media(min-width: 1440px) {
+        width: 540px;
+    }
+`
+
 export const OfferDiv  = styled.div`
     background-color: #5E54A4;
     padding: 18px 66.5px;
@@ -11,13 +19,13 @@ export const OfferDiv  = styled.div`
     color: white;
     text-align: center;
     margin-top: 64px;
-    width: 327px;
+    width: 100%;
     box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
 
 `
 
 export const Span = styled.span`
-    font-weight: 500;
+    font-weight: 700;
     font-size: 15px;
     line-height: 26px;
     letter-spacing: 0.27px;
@@ -25,11 +33,16 @@ export const Span = styled.span`
 `
 
 export const SignUpDiv = styled.div`
-    width: 327px;
+    width: 100%;
     padding: 8px 24px 24px;
     background-color: white;
     border-radius: 10px;    
     margin-top: 24px;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+
+    @media(min-width: 1440px) {
+        padding: 20px 40px 40px;
+    }
 
 `
 
@@ -53,6 +66,12 @@ export const StyledInput = styled.input`
     &:focus {
         outline: none;
     }
+
+    @media(min-width: 1440px) {
+        margin-top: 20px;
+        padding: 15px 40px 15px 32px;
+        background-position: top 16px right 16px;
+    }
 `
 
 export const StyledSubmit  = styled.button`
@@ -67,6 +86,16 @@ export const StyledSubmit  = styled.button`
     letter-spacing: 1px;
     color: white;
     background-color: #38CC8B;
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+
+    @media(min-width: 1440px) {
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    &:hover {
+        background-color: #77E2B3;
+    }
 `
 
 export const Terms = styled.p`
@@ -77,6 +106,10 @@ export const Terms = styled.p`
     color: #BAB7D4;
     text-align: center;
     padding: 0px 15px;
+
+    @media(min-width: 1440px) {
+        line-height: 26px;
+    }
 `
 
 export const TermsSpan = styled.span`

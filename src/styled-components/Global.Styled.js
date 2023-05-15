@@ -11,11 +11,15 @@ export const GlobalStyles = createGlobalStyle`
 
     body {
         background-image: url("./images/bg-intro-mobile.png");
-        background-repeat: no-repeat;
         background-color: #FF7979;
         width: 100vw;
-        height: 100%;
+        min-height: 100vh;
         display: flex;
         justify-content: center;
+        align-items: center;
+
+        @media(min-width: 1440px) {
+            background-image: url("./images/bg-intro-desktop.png");
+        }
     }
 `
