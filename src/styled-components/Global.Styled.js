@@ -14,10 +14,10 @@ export const GlobalStyles = createGlobalStyle`
         background-repeat: no-repeat;
         background-color: #FF7979;
         width: 100vw;
-        height: 100vh;
+        height: 100%;
         display: flex;
         justify-content: center;
-        align-items: center;
-        padding: 0px 24px;
+        /* align-items: center; */
+        padding: 88px 24px;
     }
 `
